@@ -24,7 +24,7 @@ export default {
 <style>
 .my-element {
     width: 100%;
-    background-image: url('./assets/Background.png'); /* 设置背景图片的路径或 URL */
+    background-image: url('./assets/HomePageBackground.png'); /* 设置背景图片的路径或 URL */
     background-size: cover; /* 背景图片大小，cover 表示覆盖整个元素 */
     background-repeat: no-repeat; /* 背景图片不重复 */
     background-position: center; /* 背景图片在元素中的位置 */
