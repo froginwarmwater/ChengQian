@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vite serve",
     "build": "vite build",
-    "lint": "vite lint"
+    "upload": "scp -O -r dist root@xxx:xxx:xxx:xxx7:/var/www/CQedu"
   },
   "dependencies": {
     "core-js": "^3.8.3",
