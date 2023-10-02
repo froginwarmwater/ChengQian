@@ -2,7 +2,7 @@
 import {useMenu} from "./Header.js";
 import {MenuItems} from "./Header.jsx";
 import {ElMenu, ElImage} from "element-plus";
-import logo from '../assets/Logo_with_name.jpg';
+import logo from '../assets/pic/Logo_with_name.jpg';
 
 const {model, service} = useMenu();
 

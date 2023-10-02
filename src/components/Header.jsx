@@ -3,12 +3,12 @@ import {ElMenuItem, ElSubMenu} from "element-plus";
 /**  @typedef {{index: string, title: string, url: string, child: MenuItem[]}} MenuItem */
 
 /**  @type {MenuItem[]} */ export const MENU_CONFIG = [
-    {index: '1', title: '首页', url: '#', child: []},
+    {index: '1', title: '首页', url: '/', child: []},
     {
         index: '2', title: '移民服务', url: '#', child: [
             {
                 index: '2-1', title: '雇主担保', url: '#', child: [
-                    {index: '2-1-1', title: 'BC 省提名-技术移民', url: '#', child: []},
+                    {index: '2-1-1', title: 'BC 省提名-技术移民', url: '/immigration/British-Columbia-Provincial-Nominee-Program', child: []},
                     {index: '2-1-2', title: '安省提名-技术移民', url: '#', child: []},
                     {index: '2-1-3', title: '曼省提名-技术移民', url: '#', child: []},
                     {index: '2-1-4', title: '萨省技术移民-雇主担保', url: '#', child: []},
@@ -66,20 +66,21 @@ import {ElMenuItem, ElSubMenu} from "element-plus";
 ];
 
 
-
 /**
  * @param {MenuItem[]} menu_items
  * @return {JSX.Element[]}
  * @constructor
  */
-const renderMenuItems = (menu_items) => menu_items.map((item) => {
-    if (item.child.length === 0) {
-        return <ElMenuItem index={item.index}>{item.title}</ElMenuItem>
+const renderMenuItems = (menu_items) => menu_items.map(({index, title, url, child}) => {
+    if (child.length === 0) {
+        return <ElMenuItem index={index}>
+            <router-link style={{ color: 'black', textDecoration: 'none'}} to={url}>{title}</router-link>
+        </ElMenuItem>
     }
-    return <ElSubMenu index={item.index}>
+    return <ElSubMenu index={index}>
         {{
-            title: () => <>{item.title}</>,
-            default: () => <>{renderMenuItems(item.child)}</>
+            title: () => <>{title}</>,
+            default: () => <>{renderMenuItems(child)}</>
         }}
     </ElSubMenu>
 })

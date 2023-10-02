@@ -1,10 +1,10 @@
 <script setup>
 import {ElImage} from "element-plus";
-import Logo_White from "../assets/logo_white.jpg";
-import QRCode_1 from "../assets/QRCode_1.jpg";
-import QRCode_2 from "../assets/QRCode_2.jpg";
-import QRCode_3 from "../assets/QRCode_3.jpg";
-import QRCode_4 from "../assets/QRCode_4.jpg";
+import Logo_White from "../assets/pic/Logo_white.jpg";
+import QRCode_1 from "../assets/pic/QRCode_1.jpg";
+import QRCode_2 from "../assets/pic/QRCode_2.jpg";
+import QRCode_3 from "../assets/pic/QRCode_3.jpg";
+import QRCode_4 from "../assets/pic/QRCode_4.jpg";
 
 </script>
 

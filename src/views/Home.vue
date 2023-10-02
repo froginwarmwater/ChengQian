@@ -175,7 +175,7 @@
         </section>
 
         <section>
-            <slide :image="home_page_background_3" class="margin-top-10vh">
+            <slide :image="home_page_background_3" class="margin-col-10vh">
                 <div class="flex-col flex-center" style="width: 60vw;">
                     <div class="horizontal-line background-white-color" />
                     <div class="white font-size-4 bold font-center">
@@ -197,9 +197,9 @@
 import MyFrame from "../components/Frame.vue";
 import {ElCard} from "element-plus";
 import Slide from "../components/Slide.vue";
-import home_page_background from "../assets/HomePageBackground.png";
-import home_page_background_2 from "../assets/HomePageBackground2.png";
-import home_page_background_3 from "../assets/HomePageBackGround3.png";
+import home_page_background from "../assets/pic/HomePageBackground.png";
+import home_page_background_2 from "../assets/pic/HomePageBackground2.png";
+import home_page_background_3 from "../assets/pic/HomePageBackGround3.png";
 
 </script>
 

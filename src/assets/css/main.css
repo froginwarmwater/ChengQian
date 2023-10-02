@@ -1,3 +1,8 @@
+:root {
+    --main-color: #685366;
+    --white-color: #FFFFFF;
+}
+
 .flex {
     display: flex;
 }
@@ -14,6 +19,10 @@
 
 .white {
     color: white;
+}
+
+.main-color {
+    color: var(--main-color);
 }
 
 .bold {
@@ -38,6 +47,10 @@
 
 .font-size-4 {
     font-size: 4rem;
+}
+
+.font-size-6 {
+    font-size: 6rem;
 }
 
 .font-size-8 {
@@ -66,8 +79,17 @@
     margin-bottom: 20px;
 }
 
+.margin-col-10vh{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
 .flex-1 {
     flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
 }
 
 .flex-center {
@@ -76,9 +98,28 @@
 }
 
 .background-main-color {
-    background-color: #685366;
+    background-color: var(--main-color);
 }
 
 .background-white-color {
-    background-color: #FFFFFF;
+    background-color: var(--white-color);
 }
+
+.line-height-2 {
+    line-height: 2rem;
+}
+
+.line-height-3 {
+    line-height: 3rem;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+li {
+    list-style-type: none;
+}
+
+/*************************************/
+
+
