@@ -26,6 +26,6 @@ export function useAutoImg(img_path_getter) {
         return shape.height / rate / window.innerHeight * 100;
     }
 
-    return { height: computed(computeVh) }
+    return { height: computed(computeVh) };
 
 }

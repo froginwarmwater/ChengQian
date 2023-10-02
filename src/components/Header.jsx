@@ -1,10 +1,8 @@
-import {ElImage, ElMenu, ElMenuItem, ElSubMenu} from "element-plus";
-import logo from '../assets/chengqianlog.jpg';
-import {ref, defineComponent} from "vue";
+import {ElMenuItem, ElSubMenu} from "element-plus";
 
 /**  @typedef {{index: string, title: string, url: string, child: MenuItem[]}} MenuItem */
 
-/**  @type {MenuItem[]} */ const MENU_CONFIG = [
+/**  @type {MenuItem[]} */ export const MENU_CONFIG = [
     {index: '1', title: '首页', url: '#', child: []},
     {
         index: '2', title: '移民服务', url: '#', child: [
@@ -68,46 +66,22 @@ import {ref, defineComponent} from "vue";
 ];
 
 
-const useMenu = () => {
-    const activeIndex = ref('1');
 
-    const model = {activeIndex}
-
-    const handleSelect = (key) => {
-        console.log(key);
-    };
-
-    const service = {handleSelect}
-
-    return {model, service};
-
-}
-
-export const Menu = defineComponent({
-    setup() {
-        const {model, service} = useMenu();
-
-        /**
-         * @param {MenuItem[]} menu_items
-         * @return {JSX.Element[]}
-         * @constructor
-         */
-        const renderMenuItems = (menu_items) => menu_items.map((item) => {
-            if (item.child.length === 0) {
-                return <ElMenuItem index={item.index}>{item.title}</ElMenuItem>
-            }
-            return <ElSubMenu index={item.index}>
-                {{
-                    title: () => <>{item.title}</>,
-                    default: () => renderMenuItems(item.child)
-                }}
-            </ElSubMenu>
-        })
-
-        return () => (<ElMenu default-active={model.activeIndex.value} mode={"horizontal"} theme={"dark"} onSelect={service.handleSelect}>
-            <ElImage style={{width: '150px', height: '47px'}} src={logo} alt={"程前教育"}/>
-            <div style={{flexGrow: 1}}/>
-            {renderMenuItems(MENU_CONFIG)}
-        </ElMenu>)
+/**
+ * @param {MenuItem[]} menu_items
+ * @return {JSX.Element[]}
+ * @constructor
+ */
+const renderMenuItems = (menu_items) => menu_items.map((item) => {
+    if (item.child.length === 0) {
+        return <ElMenuItem index={item.index}>{item.title}</ElMenuItem>
     }
+    return <ElSubMenu index={item.index}>
+        {{
+            title: () => <>{item.title}</>,
+            default: () => <>{renderMenuItems(item.child)}</>
+        }}
+    </ElSubMenu>
 })
+
+export const MenuItems = () => <>{renderMenuItems(MENU_CONFIG)}</>;

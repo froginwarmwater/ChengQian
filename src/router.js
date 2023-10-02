@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'; // 导入 Vue Router 4.x 的方式
-import HomePage from './views/HomePage.vue';
+import HomePage from './views/Home.vue';
 import AboutPage from './views/AboutPage.vue';
 
 const routes = [

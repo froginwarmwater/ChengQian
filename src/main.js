@@ -2,6 +2,7 @@ import { createApp } from 'vue'; // 导入 createApp 而不是 Vue
 import App from './App.vue';
 import router from './router';
 import 'element-plus/theme-chalk/index.css'; // Element Plus 的样式
+import './assets/main.css'
 
 const app = createApp(App);
 
