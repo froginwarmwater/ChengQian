@@ -3,8 +3,36 @@
     --white-color: #FFFFFF;
 }
 
+ul {
+    padding-inline-start: 0;
+}
+li {
+    list-style-type: none;
+}
+
+section {
+    position: relative;
+}
+
+body, div, span {
+    font-family: 'Merriweather', serif;
+    text-transform: capitalize;
+    line-height: 1.2em;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    font-weight: 100;
+    text-transform: capitalize;
+    line-height: 1.2em;
+}
+
 .flex {
     display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 .flex-col {
@@ -29,6 +57,14 @@
     font-weight: bold;
 }
 
+.normal {
+    font-weight: normal;
+}
+
+.light {
+    font-weight: lighter;
+}
+
 .font-center {
     text-align: center;
 }
@@ -48,6 +84,7 @@
 .font-size-4 {
     font-size: 4rem;
 }
+
 
 .font-size-6 {
     font-size: 6rem;
@@ -69,9 +106,27 @@
     margin-top: 10vh;
 }
 
+.padding-top-10vh {
+    padding-top: 10vh;
+}
+
+.margin-top--10vh {
+    margin-top: -10vh;
+}
+
 .margin-row-20 {
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.margin-row-10vw {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.margin-row-20vw {
+    margin-left: 20vw;
+    margin-right: 20vw;
 }
 
 .margin-col-20{
@@ -79,9 +134,19 @@
     margin-bottom: 20px;
 }
 
+.margin-col-10{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .margin-col-10vh{
     margin-top: 10vh;
     margin-bottom: 10vh;
+}
+
+.padding-col-10vh{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 
 .flex-1 {
@@ -113,13 +178,32 @@
     line-height: 3rem;
 }
 
-ul {
-    padding-inline-start: 0;
-}
-li {
-    list-style-type: none;
-}
-
 /*************************************/
 
+
+@media (max-width: 960px) {
+    .font-size-1 {
+        font-size: 0.75rem;
+    }
+
+    .font-size-2 {
+        font-size: 1rem;
+    }
+
+    .font-size-3 {
+        font-size: 2rem;
+    }
+
+    .font-size-4 {
+        font-size: 3rem;
+    }
+
+    .margin-top-10vh {
+        margin-top: 7.5vh;
+    }
+
+    .margin-top--10vh {
+        margin-top: -7.5vh;
+    }
+}
 

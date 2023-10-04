@@ -4,9 +4,11 @@ import MyFooter from "./Footer.vue";
 </script>
 
 <template>
-    <my-menu />
-    <slot></slot>
-    <my-footer/>
+    <div id="app" style="height: 1000px;">
+        <my-menu />
+        <slot></slot>
+        <my-footer/>
+    </div>
 </template>
 
 <style scoped>
