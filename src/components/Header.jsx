@@ -50,7 +50,7 @@ import {useAdapter} from "@/components/SimpleUI.js";
     },
     {
         index: '3-3', title: '商业投资', url: '', child: [
-            {index: '3-3-1', title: 'SUV 联邦创业类移民', url: '', child: []},
+            {index: '3-3-1', title: 'SUV 联邦创业类移民', url: '/Immigration/Page11/', child: []},
             // {index: '2-3-2', title: '跨国公司内部派遣工签', url: '#', child: []},
             // {index: '2-3-3', title: 'BC 省企业家试点移民', url: '#', child: []},
             // {index: '2-3-4', title: 'BC 省企业家基础移民', url: '#', child: []},

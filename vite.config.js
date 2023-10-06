@@ -27,6 +27,7 @@ export default defineConfig({
                 page8: resolve(__dirname, 'Immigration/Page8/index.html'),
                 page9: resolve(__dirname, 'Immigration/Page9/index.html'),
                 page10: resolve(__dirname, 'Immigration/Page10/index.html'),
+                page11: resolve(__dirname, 'Immigration/Page11/index.html'),
             },
             output: {
                 manualChunks: {

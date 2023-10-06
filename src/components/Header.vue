@@ -1,10 +1,5 @@
 <script setup>
-import {useMenu} from "./Header.js";
-import {MenuItems, Menu as AdapterMenu} from "./Header.jsx";
-import {ElMenu, ElImage} from "element-plus";
-import logo from '../assets/pic/Logo_with_name.jpg';
-
-const {model, service} = useMenu();
+import { Menu as AdapterMenu} from "./Header.jsx";
 
 </script>
 

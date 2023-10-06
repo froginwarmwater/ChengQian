@@ -127,7 +127,7 @@ import {SolidPoint} from "@/components/SimpleUI.jsx";
         </section>
 
         <section class="flex flex-center margin-col-10vh section-5">
-            <div class="flex-row flex-center flex-wrap" style="width: 90%; align-items: normal;">
+            <div class="flex-row flex-center flex-wrap" style="width: 100%; align-items: normal;">
                 <div class="section-title">
                     <section-title title="移民项目介绍"/>
                 </div>

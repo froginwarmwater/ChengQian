@@ -1,10 +1,32 @@
 <script setup>
 import MyFrame from "@/components/Base.vue";
-import {ElCard} from "element-plus";
+import {ElCard, ElCarousel, ElCarouselItem, ElImage} from "element-plus";
 import Slide from "@/components/Slide.vue";
+import avart from '@/assets/pic/avart.png';
 import home1 from "@/assets/pic/home1.png";
 import home2 from "@/assets/pic/home_2.png";
 import home3 from "@/assets/pic/home_3.png";
+
+const data = [
+    {
+        comment: "我要感谢程前教育公司在留学申请过程中的全程支持。从最初的院校选择到文书准备，再到签证申请，团队一直紧密地与我合作，确保每一步都能够顺利进行。我特别欣赏你们对细节的关注和对每一份申请材料的精心审查，这为我在申请过程中提供了极大的信心和安心感，并让我很快拿到了帝国理工大学的offer。",
+        author: "张佳琪",
+        project: "程前教育留学保录项目",
+        img: avart,
+    },
+    {
+        comment: "我要感谢程前教育公司在留学申请过程中的全程支持。从最初的院校选择到文书准备，再到签证申请，团队一直紧密地与我合作，确保每一步都能够顺利进行。我特别欣赏你们对细节的关注和对每一份申请材料的精心审查，这为我在申请过程中提供了极大的信心和安心感，并让我很快拿到了帝国理工大学的offer。",
+        author: "张佳琪",
+        project: "程前教育留学保录项目",
+        img: avart,
+    },
+    {
+        comment: "我要感谢程前教育公司在留学申请过程中的全程支持。从最初的院校选择到文书准备，再到签证申请，团队一直紧密地与我合作，确保每一步都能够顺利进行。我特别欣赏你们对细节的关注和对每一份申请材料的精心审查，这为我在申请过程中提供了极大的信心和安心感，并让我很快拿到了帝国理工大学的offer。",
+        author: "张佳琪",
+        project: "程前教育留学保录项目",
+        img: avart,
+    }
+]
 </script>
 
 <template>
@@ -192,17 +214,37 @@ import home3 from "@/assets/pic/home_3.png";
         </section>
 
         <section>
-            <div class="flex flex-center background-white-color margin-top-10vh" style=" height: 30vh;">
-                <div class="flex-row background-main-color flex-center white font-size-3"
-                     style="width: 90vw; height: 100%;">
-                    客户评价
+            <div class="flex flex-center margin-col-10vh" style="height: 30vh;">
+                <div class="flex-row flex-center flex-wrap" style="width: 90vw;">
+                    <div class="comment-left" style="height: 100%; border-left: 5px solid var(--main-color); margin-top: auto; margin-bottom: auto;">
+                        <h1 class="font-size-3 margin-row-20" style="margin-top: 0">客户评价</h1>
+                        <div class="margin-row-20">
+                            程前注重每一个客户的评价，并且以此客户满意作为们的最终服务目标。
+                        </div>
+                    </div>
+                    <div class="comment-right">
+                        <el-carousel style="width: 100%; height: 30vh;">
+                            <el-carousel-item  v-for="info in data">
+                                <div class="flex-row">
+                                    <div class="flex flex-center">
+                                        <el-image fit="cover" :src="info.img" style="height: 20vh; width: 20vh;" />
+                                    </div>
+                                    <div class="margin-left-20">
+                                        <div class="font-size-1 margin-col-20">{{ info.comment }}</div>
+                                        <div class="font-size-1 bold">{{ info.author }}</div>
+                                        <div class="font-size-1">{{ info.project }}</div>
+                                    </div>
+                                </div>
+                            </el-carousel-item>
+                        </el-carousel>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section>
             <slide :image="home3" class="margin-col-10vh">
-                <div style = 'width: 100%' class="flex flex-center">
+                <div style='width: 100%' class="flex flex-center">
                     <div class="flex-col flex-center" style="width: 80%;">
                         <div class="horizontal-line background-white-color"/>
                         <div class="white font-size-3 bold font-center">
@@ -340,6 +382,21 @@ el-menu {
 
     .box-3-row {
         flex: inherit;
+    }
+}
+
+.comment-left {
+    width: 40%;
+
+    @media (max-width: 480px) {
+        width: 100%;
+    }
+}
+
+.comment-right {
+    width: 50%;
+    @media (max-width: 480px) {
+        width: 100%;
     }
 }
 
