@@ -1,6 +1,7 @@
 import { createApp } from 'vue'; // 导入 createApp 而不是 Vue
 import Tmpl from "@/Tmpl.vue";
 import 'element-plus/theme-chalk/index.css'; // Element Plus 的样式
+import page6 from '@/assets/pic/page6.png'
 import '@/assets/css/main.css'
 
 const page_cfg = {
@@ -9,6 +10,7 @@ const page_cfg = {
         "无需投资，无需创造就业；资产要求低",
         "费用低，速度快，无硬性语言要求",
     ],
+    img: page6,
     project_instruction: "加拿大联邦自雇移民是指那些在文化、艺术、体育等领域已取得杰" +
         "出成就的人士，如作家、画家、艺术家、演员、运动员等，以自雇" +
         "形式移民加拿大，为加拿大社会、文化做出特别贡献。它要求申请" +

@@ -20,13 +20,16 @@ const {model, service} = useMenu();
 </template>
 
 <style scoped>
-
+.menu {
+    //--el-menu-active-color: var(--main-color);
+    //--el-menu-hover-text-color: var(--main-color);
+}
 
 .menu >>> .el-menu--horizontal > .el-menu-item.is-active, .menu >>> .el-menu--horizontal > .el-sub-menu.is-active .el-sub-menu__title {
     border-bottom: none;
 }
 
-.menu >>> .el-menu--horizontal > .el-menu-item:hover, .menu >>> .el-menu--horizontal > .el-sub-menu.is-active .el-sub-menu__title:hover {
+.menu >>> .el-menu--horizontal > .el-menu-item:hover, .el-menu--horizontal > .el-menu-item__title:hover, .menu >>> .el-menu--horizontal > .el-sub-menu.is-active .el-sub-menu__title:hover {
     background-color: #FFFFFF;
 }
 

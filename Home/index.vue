@@ -3,17 +3,17 @@
         <section>
             <slide :image=home_page_background>
                 <div class="flex-col flex-center">
-                    <h1 class="white font-size-4 font-center">
+                    <h1 class="white font-size-4 font-center bold">
                         程前教育, 致力于每位客户都有更好的选择。
                     </h1>
-                    <h1 class="white font-size-2 font-center" >
+                    <h1 class="white font-size-2 font-center">
                         <span>ChengQian Education committed to better choices for every customer. </span>
                     </h1>
                 </div>
             </slide>
         </section>
 
-        <section>
+        <section class="section-2">
             <div class="flex flex-center margin-top--10vh">
                 <el-card class="box">
                     <div class="box-inline flex" style="flex-wrap: wrap">
@@ -25,7 +25,7 @@
                                 留学服务
                             </div>
                         </div>
-                        <div class="line" />
+                        <div class="line"/>
                         <div class="box-info">
                             <div class="card-text-center">
                                 763+
@@ -34,7 +34,7 @@
                                 移民服务
                             </div>
                         </div>
-                        <div class="line" />
+                        <div class="line"/>
                         <div class="box-info">
                             <div class="card-text-center">
                                 3542+
@@ -43,7 +43,7 @@
                                 语言服务
                             </div>
                         </div>
-                        <div class="line" />
+                        <div class="line"/>
                         <div class="box-info">
                             <div class="card-text-center">
                                 100%
@@ -57,7 +57,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="section-3">
             <div class="flex flex-center background-white-color margin-top-10vh box-2">
                 <div class="flex background-main-color flex-center " style="width: 90vw; height: 100%;">
                     <div class="flex-row flex-wrap flex-center margin-col-20">
@@ -69,7 +69,7 @@
                         </div>
                         <div class="margin-row-20 box-2-row" style="height: 100%;">
                             <div class="flex flex-wrap">
-                                <el-card class="margin-col-20 margin-row-20 box-2-row">
+                                <el-card class="margin-col-20 margin-row-10 box-2-row">
                                     <div class="four-cards-title">
                                         移民服务
                                     </div>
@@ -77,7 +77,7 @@
                                         定制化移民服务，助您畅通无阻完成移民之路安心在海外工作与生活
                                     </div>
                                 </el-card>
-                                <el-card class="margin-col-20 margin-row-20 box-2-row">
+                                <el-card class="margin-col-20 margin-row-10 box-2-row">
                                     <div class="four-cards-title">
                                         留学服务
                                     </div>
@@ -87,7 +87,7 @@
                                 </el-card>
                             </div>
                             <div class="flex flex-wrap margin-top-20">
-                                <el-card class="margin-col-20 margin-row-20 box-2-row">
+                                <el-card class="margin-col-20 margin-row-10 box-2-row">
                                     <div class="four-cards-title">
                                         语言服务
                                     </div>
@@ -95,7 +95,7 @@
                                         高校老师一对一定制教学，外教语言多层次定制服务，更有特色保分服务帮您解决语言困扰
                                     </div>
                                 </el-card>
-                                <el-card class="margin-col-20 margin-row-20 box-2-row">
+                                <el-card class="margin-col-20 margin-row-10 box-2-row">
                                     <div class="four-cards-title">
                                         学习资源
                                     </div>
@@ -112,7 +112,7 @@
 
         <section>
             <slide :image="home_page_background_2" class="margin-top-10vh" style="">
-                <div >
+                <div>
                     <div class="white font-center font-size-2">Together we can fulfil the dream of living abroad</div>
                     <h1 class="white font-center font-size-3">
                         携手圆满海外生活
@@ -131,28 +131,34 @@
             </slide>
         </section>
 
-        <section>
+        <section class="section-5">
             <div class="flex flex-center" style="width: 100%;">
-                <div class="flex-row flex-wrap box-3" >
+                <div class="flex-row flex-wrap box-3">
                     <el-card class="box-3-row margin-row-20 margin-col-10">
-                        <div class="font-size-2 bold">01</div>
-                        <div class="font-size-2 bold">专业律师团队</div>
-                        <div class="font-size-1">
-                            我们拥有一支专业的移民团队和法律咨询团队，拥有多年的从业经验和优秀的专业知识，能够为您提供最权威、最全面的移民和法律咨询服务。
+                        <div style="height: 100%">
+                            <div class="font-size-2 bold">01</div>
+                            <div class="font-size-2 bold">专业律师团队</div>
+                            <div class="font-size-1">
+                                我们拥有一支专业的移民团队和法律咨询团队，拥有多年的从业经验和优秀的专业知识，能够为您提供最权威、最全面的移民和法律咨询服务。
+                            </div>
                         </div>
                     </el-card>
-                    <el-card class="box-3-row margin-row-20 margin-col-10">
-                        <div class="font-size-2 bold">02</div>
-                        <div class="font-size-2 bold">定制化方案</div>
-                        <div class="font-size-1">
-                            我们致力于为每一位客户提供量身订制的移民和留学方案，我们将充分考虑客户的个人情况，需求和背景，帮助客户选择最适合方案。
+                    <el-card class="box-3-row margin-row-20 margin-col-10" style="height: auto;">
+                        <div style="height: 100%;">
+                            <div class="font-size-2 bold">02</div>
+                            <div class="font-size-2 bold">定制化方案</div>
+                            <div class="font-size-1">
+                                我们致力于为每一位客户提供量身订制的移民和留学方案，我们将充分考虑客户的个人情况，需求和背景，帮助客户选择最适合方案。
+                            </div>
                         </div>
                     </el-card>
-                    <el-card class="box-3-row margin-row-20 margin-col-10">
-                        <div class="font-size-2 bold">03</div>
-                        <div class="font-size-2 bold">保障式服务</div>
-                        <div class="font-size-1">
-                            我们提供全程跟踪式服务，为客户提供全方位的指导和支持，从咨询材料准备、申请递交到签证获批，我们的团队将全程为客户提供保障，让客户的移民之旅更加安心。
+                    <el-card class="box-3-row margin-row-20 margin-col-10" style="height: auto;">
+                        <div style="height: 100%;">
+                            <div class="font-size-2 bold">03</div>
+                            <div class="font-size-2 bold">保障式服务</div>
+                            <div class="font-size-1">
+                                我们提供全程跟踪式服务，为客户提供全方位的指导和支持，从咨询材料准备、申请递交到签证获批，我们的团队将全程为客户提供保障，让客户的移民之旅更加安心。
+                            </div>
                         </div>
                     </el-card>
                 </div>
@@ -160,7 +166,7 @@
         </section>
 
         <section>
-            <div class="flex flex-center background-white-color margin-top-10vh" >
+            <div class="flex flex-center background-white-color margin-top-10vh">
                 <div class="background-main-color padding-col-10vh" style="width: 90%;">
                     <div class="flex-col background-main-color flex-center margin-row-10vw">
                         <h1 class="font-size-3 font-center bold white">
@@ -178,7 +184,8 @@
 
         <section>
             <div class="flex flex-center background-white-color margin-top-10vh" style=" height: 30vh;">
-                <div class="flex-row background-main-color flex-center white font-size-3" style="width: 90vw; height: 100%;">
+                <div class="flex-row background-main-color flex-center white font-size-3"
+                     style="width: 90vw; height: 100%;">
                     客户评价
                 </div>
             </div>
@@ -186,15 +193,17 @@
 
         <section>
             <slide :image="home_page_background_3" class="margin-col-10vh">
-                <div class="flex-col flex-center" style="width: 80vw;">
-                    <div class="horizontal-line background-white-color" />
-                    <div class="white font-size-3 bold font-center">
-                        与我们联系<br/>
-                        开启留学与移民生活<br/>
-                    </div>
-                    <div class="horizontal-line background-white-color" />
-                    <div class="white margin-top-20" style="font-size: 1.3rem;">
-                        Contact us to start your life as a student and immigrant
+                <div style = 'width: 100%' class="flex flex-center">
+                    <div class="flex-col flex-center" style="width: 80%;">
+                        <div class="horizontal-line background-white-color"/>
+                        <div class="white font-size-3 bold font-center">
+                            与我们联系<br/>
+                            开启留学与移民生活<br/>
+                        </div>
+                        <div class="horizontal-line background-white-color"/>
+                        <div class="white margin-top-20" style="font-size: 1.3rem;">
+                            Contact us to start your life as a student and immigrant
+                        </div>
                     </div>
                 </div>
             </slide>
@@ -213,20 +222,25 @@ import home_page_background_3 from "@/assets/pic/HomePageBackGround3.png";
 
 </script>
 
-<style>
+<style scoped>
+
+.box >>> .el-card {
+    border-bottom: 5px solid var(--main-color);
+}
+
+.section-3 >>> .el-card {
+    border-top: 5px solid #845777;
+}
+
+.section-5 >>> .el-card {
+    border-bottom: 5px solid var(--main-color);
+}
 
 el-menu {
     height: 200%;
 }
 
-.title {
-    text-align: center; /* 文本水平居中 */
-    font-weight: bold; /* 加粗字体 */
-    color: white;
-}
-
 .box {
-    height: 20vh;
     width: 80vw;
 }
 
@@ -236,7 +250,8 @@ el-menu {
     justify-content: space-around;
 }
 
-.box-info {}
+.box-info {
+}
 
 .line {
     width: 1px; /* 竖线的宽度 */
@@ -249,7 +264,7 @@ el-menu {
 }
 
 .box-2-row {
-    width: 40%;
+    width: 42%;
     @media (max-width: 480px) {
         width: 100%;
     }
@@ -301,10 +316,12 @@ el-menu {
         width: 80vw;
         height: auto;
     }
+
     .line {
         width: 100%; /* 竖线的宽度 */
         height: 1px; /* 竖线的高度，这里设为和容器高度一样 */
     }
+
     .box-info {
         display: flex;
         flex-direction: column;
@@ -312,6 +329,7 @@ el-menu {
         align-items: center;
         width: 100%;
     }
+
     .box-inline {
         height: 80vh;
     }

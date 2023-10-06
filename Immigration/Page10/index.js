@@ -1,10 +1,12 @@
 import { createApp } from 'vue'; // 导入 createApp 而不是 Vue
 import Tmpl from "@/Tmpl.vue";
 import 'element-plus/theme-chalk/index.css'; // Element Plus 的样式
+import page10 from '@/assets/pic/page10.png'
 import '@/assets/css/main.css'
 
 const page_cfg = {
     title: "农业食品试点移民",
+    img: page10,
     sub_title: [
         "名额有保障，政策宽松，无需省提名；",
         "学历高中，雅思4分即可；匹配雇主快",

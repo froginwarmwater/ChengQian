@@ -1,10 +1,12 @@
 import { createApp } from 'vue'; // 导入 createApp 而不是 Vue
 import Tmpl from "@/Tmpl.vue";
 import 'element-plus/theme-chalk/index.css'; // Element Plus 的样式
+import page4 from '@/assets/pic/page4.png';
 import '@/assets/css/main.css'
 
 const page_cfg = {
     title: "萨省提名国际技术工人雇主担保类别",
+    img: page4,
     sub_title: [
         "学历高中，语言CLB4即可申请",
         "申请程序简单，审批速度快，无需面试",

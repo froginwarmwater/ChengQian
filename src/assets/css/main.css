@@ -54,7 +54,7 @@ h1 {
 }
 
 .bold {
-    font-weight: bold;
+    font-weight: 900;
 }
 
 .normal {
@@ -112,6 +112,11 @@ h1 {
 
 .margin-top--10vh {
     margin-top: -10vh;
+}
+
+.margin-row-10 {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .margin-row-20 {

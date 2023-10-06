@@ -1,10 +1,12 @@
 import { createApp } from 'vue'; // 导入 createApp 而不是 Vue
 import Tmpl from "@/Tmpl.vue";
 import 'element-plus/theme-chalk/index.css'; // Element Plus 的样式
+import page5 from '@/assets/pic/page5.png'
 import '@/assets/css/main.css'
 
 const page_cfg = {
     title: "劳工市场影响评估",
+    img: page5,
     sub_title: [
         "雇主Offer +LMA可以申请工签，",
         "在联邦EE等多个移民项目中加分",

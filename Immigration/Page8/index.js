@@ -1,10 +1,12 @@
 import { createApp } from 'vue'; // 导入 createApp 而不是 Vue
 import Tmpl from "@/Tmpl.vue";
 import 'element-plus/theme-chalk/index.css'; // Element Plus 的样式
+import page8 from '@/assets/pic/page8.png'
 import '@/assets/css/main.css'
 
 const page_cfg = {
     title: "联邦EE技术类移民",
+    img: page8,
     sub_title: [
         "审批速度快、申请者只",
         "需在官方指定的网站递交电子材料即可",

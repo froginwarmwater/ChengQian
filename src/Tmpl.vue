@@ -2,13 +2,13 @@
 import {ElCard} from "element-plus";
 import MyFrame from "./components/Base.vue";
 import Slide from "./components/Slide.vue";
-import ImmigrationBackground_1 from './assets/pic/ImmigrationBackground_1.png';
-import {Tag, List, RadiusCard, SolidPoint} from "./components/SimpleUI.jsx";
+import {Tag, List, SolidPoint} from "./components/SimpleUI.jsx";
 import wecome_png from "./assets/pic/Wecome.png";
 import {useAdapter} from "@/Tmpl";
 
 const props = defineProps({
     title: String,
+    img: String,
     sub_title: Array,
     project_instruction: String,
     adapt_scope: String,
@@ -24,14 +24,14 @@ const {is_pc, is_mobile} = useAdapter();
 </script>
 
 <template>
-    <my-frame>
+    <my-frame class="page">
         <section class="flex flex-center">
-            <slide :image="ImmigrationBackground_1">
+            <slide :image="props.img">
                 <div class="flex-col flex-center">
-                    <h1 :class=" (is_pc ? 'font-size-4' : 'font-size-3') + ' white'">
+                    <h1 :class=" (is_pc ? 'font-size-4' : 'font-size-3') + ' white bold'">
                         {{ props.title }}
                     </h1>
-                    <h1 :class="(is_pc ? 'font-size-3' : 'font-size-2') + ' white'">
+                    <h1 :class="(is_pc ? 'font-size-3' : 'font-size-2') + ' white bold'">
                         <template v-for="st in props.sub_title">
                             <div class="font-center line-height-2" style="line-height: 2">{{ st }}</div>
                         </template>
@@ -82,7 +82,7 @@ const {is_pc, is_mobile} = useAdapter();
             </div>
         </section>
         <section v-if="props.require_material && props.require_material" class="flex flex-center">
-            <div class="flex-row flex-wrap" style="width: 80%;">
+            <div class="flex-row flex-wrap" style="width: 80%; justify-content: center">
                 <el-card class="section-4-row margin-row-20 margin-col-20" style="height: auto;">
                     <h1 class="main-color">申请条件</h1>
                     <list>
@@ -118,7 +118,7 @@ const {is_pc, is_mobile} = useAdapter();
                 <div class="flex-col flex-center" style="height: 100%;">
                     <div style="width: 90%;">
                         <div class="horizontal-line background-white-color"/>
-                        <div class="white font-size-4 font-center" style="line-height: 1.5;">
+                        <div class="white font-size-4 font-center bold" style="line-height: 1.5;">
                             欢迎来到加拿大<br/>
                             开启理想生活<br/>
                         </div>
@@ -134,6 +134,10 @@ const {is_pc, is_mobile} = useAdapter();
 </template>
 
 <style scoped>
+
+.page >>> .el-card {
+    border-bottom: 5px solid var(--main-color);
+}
 
 .horizontal-line {
     width: 100%; /* 竖线的宽度 */

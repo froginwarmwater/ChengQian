@@ -1,10 +1,12 @@
 import { createApp } from 'vue'; // 导入 createApp 而不是 Vue
 import Tmpl from "@/Tmpl.vue";
 import 'element-plus/theme-chalk/index.css'; // Element Plus 的样式
+import page9 from '@/assets/pic/page9.png'
 import '@/assets/css/main.css'
 
 const page_cfg = {
     title: "北方地区试点",
+    img: page9,
     sub_title: [
         "最快12个月获得移民身份",
         "语言学历要求低",

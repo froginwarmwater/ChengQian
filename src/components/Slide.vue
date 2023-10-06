@@ -1,6 +1,5 @@
 <script setup>
 import { defineProps } from 'vue'
-import {useAutoImg} from "./Slide";
 
 const props = defineProps({ image: String })
 </script>
@@ -29,7 +28,7 @@ const props = defineProps({ image: String })
     top: 0;
     left: 0;
     position: absolute;
-    background-color: #16163f;
+    //background-color: #16163f;
     opacity: 0.75;
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
