@@ -16,6 +16,7 @@ export default defineConfig({
             input: {
                 index: resolve(__dirname, 'index.html'),
                 home: resolve(__dirname, 'Home/index.html'),
+                immigration: resolve(__dirname, 'Immigration/index.html'),
                 page1: resolve(__dirname, 'Immigration/Page1/index.html'),
                 page2: resolve(__dirname, 'Immigration/Page2/index.html'),
                 page3: resolve(__dirname, 'Immigration/Page3/index.html'),

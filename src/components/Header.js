@@ -33,14 +33,19 @@ export const useMenu = () => {
     }
 
     const activeIndex = ref(getDefaultActive()?.index);
+    const is_display = ref(false);
 
-    const model = {activeIndex}
+    const model = {activeIndex, is_display}
 
     const handleSelect = (key) => {
         console.log(key);
     };
 
-    const service = {handleSelect}
+    const clickBtn = () => {
+        is_display.value = !is_display.value;
+    }
+
+    const service = {handleSelect, clickBtn}
 
     return {model, service};
 

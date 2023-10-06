@@ -1,5 +1,6 @@
 :root {
     --main-color: #685366;
+    --light-main-color: #E0D5DC;
     --white-color: #FFFFFF;
 }
 
@@ -57,12 +58,12 @@ h1 {
     font-weight: 900;
 }
 
-.normal {
-    font-weight: normal;
+.light {
+    font-weight: 300;
 }
 
-.light {
-    font-weight: lighter;
+.normal {
+    font-weight: normal;
 }
 
 .font-center {
@@ -152,6 +153,21 @@ h1 {
 .padding-col-10vh{
     padding-top: 10vh;
     padding-bottom: 10vh;
+}
+
+.padding-col-10{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.padding-col-20{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.padding-row-20{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .flex-1 {

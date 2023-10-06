@@ -1,7 +1,16 @@
+<script setup>
+import MyFrame from "@/components/Base.vue";
+import {ElCard} from "element-plus";
+import Slide from "@/components/Slide.vue";
+import home1 from "@/assets/pic/home1.png";
+import home2 from "@/assets/pic/home_2.png";
+import home3 from "@/assets/pic/home_3.png";
+</script>
+
 <template>
     <my-frame>
         <section>
-            <slide :image=home_page_background>
+            <slide :image=home1>
                 <div class="flex-col flex-center">
                     <h1 class="white font-size-4 font-center bold">
                         程前教育, 致力于每位客户都有更好的选择。
@@ -111,7 +120,7 @@
         </section>
 
         <section>
-            <slide :image="home_page_background_2" class="margin-top-10vh" style="">
+            <slide :image="home2" class="margin-top-10vh" style="">
                 <div>
                     <div class="white font-center font-size-2">Together we can fulfil the dream of living abroad</div>
                     <h1 class="white font-center font-size-3">
@@ -192,7 +201,7 @@
         </section>
 
         <section>
-            <slide :image="home_page_background_3" class="margin-col-10vh">
+            <slide :image="home3" class="margin-col-10vh">
                 <div style = 'width: 100%' class="flex flex-center">
                     <div class="flex-col flex-center" style="width: 80%;">
                         <div class="horizontal-line background-white-color"/>
@@ -212,15 +221,6 @@
     </my-frame>
 
 </template>
-<script setup>
-import MyFrame from "@/components/Base.vue";
-import {ElCard} from "element-plus";
-import Slide from "@/components/Slide.vue";
-import home_page_background from "@/assets/pic/HomePageBackground.png";
-import home_page_background_2 from "@/assets/pic/HomePageBackground2.png";
-import home_page_background_3 from "@/assets/pic/HomePageBackGround3.png";
-
-</script>
 
 <style scoped>
 

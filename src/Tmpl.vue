@@ -4,7 +4,7 @@ import MyFrame from "./components/Base.vue";
 import Slide from "./components/Slide.vue";
 import {Tag, List, SolidPoint} from "./components/SimpleUI.jsx";
 import wecome_png from "./assets/pic/Wecome.png";
-import {useAdapter} from "@/Tmpl";
+import {useAdapter} from "@/components/SimpleUI.js";
 
 const props = defineProps({
     title: String,
